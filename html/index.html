@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/styles/github.min.css">
+  <script src="../js/translations.js"></script>
+  <script src="../js/language-switcher.js"></script>
+  <script defer src="../js/javascript.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/highlight.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => hljs.highlightAll());
+  </script>
+  <title data-translate="hero_title">zhan | 网络安全 & 全栈开发</title>
+</head>
+
+<body>
+  <!-- 顶部导航栏 -->
+  <nav class="header">
+    <a href="./index.html" class="active" data-translate="home">首页</a>
+    <a href="./cv.html" data-translate="resume">简历</a>
+  </nav>
+
+  <div class="content">
+    <!-- 主视觉区 -->
+    <header class="hero-section">
+      <h1 class="title" data-translate="hero_title">zhan | 网络安全 & 全栈开发</h1>
+      <p class="subtitle" data-translate="hero_subtitle">"一个喜欢研究各种技术的小同学"</p>
+      <button class="cta-button" data-translate="view_resume">查看我的简历 →</button>
+    </header>
+
+    <!-- 作品分类展示区 -->
+    <section class="projects">
+      <h2 class="section-title" data-translate="my_projects">我的作品</h2>
+      
+      <div class="filter-tabs">
+        <button class="filter-btn active" data-filter="all" data-translate="all">全部</button>
+        <button class="filter-btn" data-filter="security" data-translate="cybersecurity">网络安全</button>
+        <button class="filter-btn" data-filter="web" data-translate="web_dev">Web开发</button>
+        <button class="filter-btn" data-filter="automation" data-translate="automation">自动化工具</button>
+        <button class="filter-btn" data-filter="academic" data-translate="academic">学术项目</button>
+      </div>
+
+      <div class="projects-grid">
+        <!-- 项目卡片 -->
+        <div class="project-card" data-category="security">
+          <div class="project-header">
+            <h3 data-translate="t5ezxss_title">T5Ezxss - XSS检测系统</h3>
+            <span class="tag" data-translate="secondary_dev">二次开发</span>
+          </div>
+          <p class="project-description" data-translate="t5ezxss_desc">二次开发优化</p>
+          <div class="project-links">
+            <a href="https://github.com/hhzleon/T5Ezxss" target="_blank" class="project-link" data-translate="view_code">查看代码</a>
+          </div>
+        </div>
+          <!-- 项目卡片 -->
+          <div class="project-card" data-category="security">
+            <div class="project-header">
+              <h3 data-translate="vulnerability_mining_title">**宝的漏洞挖掘</h3>
+              <span class="tag">2032-03-03公开细节</span>
+            </div>
+            <p class="project-description" data-translate="vulnerability_mining_desc">一个牵涉5亿用户信息安全的漏洞,中国CNVD收录: CNVD-2022-16995</p>
+            <div class="project-links">
+              <a href="https://github.com/hhzleon/T5Ezxss" target="_blank" class="project-link disabled-link" data-translate="not_public">暂未公开</a>
+            </div>
+          </div>
+
+        <div class="project-card" data-category="web">
+          <div class="project-header">
+            <h3 data-translate="game_translation_title">游戏聊天实时翻译</h3>
+            <span class="tag" data-translate="demo_tag">demo</span>
+          </div>
+          <p class="project-description" data-translate="game_translation_desc">Python | OCR | 翻译API</p>
+          <div class="project-links">
+            <a href="https://github.com/hhzleon/Game-chat-text-real-time-translation" target="_blank" class="project-link" data-translate="view_code">查看代码</a>
+          </div>
+        </div>
+
+
+        <div class="project-card" data-category="academic">
+          <div class="project-header">
+            <h3 data-translate="data_prediction_title">数据预测相关项目</h3>
+            <span class="tag" data-translate="in_progress">进行中</span>
+          </div>
+          <p class="project-description" data-translate="data_prediction_desc">pytorch | 模型预测 | 论文发表</p>
+          <div class="project-links">
+            <a href="#" class="project-link disabled-link" data-translate="not_public_details">暂不方便公开更多细节</a>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="academic">
+          <div class="project-header">
+            <h3 data-translate="sentiment_monitor_title">舆情监测相关项目</h3>
+            <span class="tag" data-translate="in_progress">进行中</span>
+          </div>
+          <p class="project-description" data-translate="sentiment_monitor_desc">pytorch | LLM | FLASK | SQLITE | Vue</p>
+          <p class="project-description" data-translate="sentiment_monitor_full">基于LLM大模型与pytorch开发的言论检测程序,可以帮助企业控制舆情.</p>
+          <div class="project-links">
+            <a href="#" class="project-link disabled-link" data-translate="not_public_details">暂不方便公开更多细节</a>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="automation">
+          <div class="project-header">
+            <h3 data-translate="alias_title">alias自动化商品管理框架</h3>
+            <span class="tag" data-translate="demo_tag">demo</span>
+          </div>
+          <p class="project-description" data-translate="alias_desc">Selenium | Python | Docker</p>
+          <p class="project-description" data-translate="alias_full">快速帮助海外贸易的老板自动化的比价和上架商品,分布式部署.</p>
+          <div class="project-links">
+            <a href="https://github.com/hhzleon/alias_Automatic-listing-of-products " class="project-link" data-translate="view_code">查看代码</a>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="automation">
+          <div class="project-header">
+            <h3 data-translate="twitter_automation_title">twitter_automation</h3>
+            <span class="tag" data-translate="demo_tag">demo</span>
+          </div>
+          <p class="project-description" data-translate="twitter_automation_desc">Selenium | Python | Docker</p>
+          <p class="project-description" data-translate="twitter_automation_full">帮助批量管理推特自动化的软件,因为商业项目改变,所以是一个半成品</p>
+          <div class="project-links">
+            <a href="https://github.com/hhzleon/twitter_automation " class="project-link" data-translate="view_code">查看代码</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 技术栈图标墙 -->
+    <section class="skills">
+      <h2 class="section-title" data-translate="tech_stack">技术栈</h2>
+      <div class="skills-grid">
+        <div class="skill-item">
+          <img src="../img/python-icon.svg" alt="Python" class="skill-icon">
+          <span class="skill-name">Python</span>
+        </div>
+        <div class="skill-item">
+          <img src="../img/php-icon.svg" alt="PHP" class="skill-icon">
+          <span class="skill-name">PHP</span>
+        </div>
+        <div class="skill-item">
+          <img src="../img/vue-icon.svg" alt="Vue" class="skill-icon">
+          <span class="skill-name">Vue.js</span>
+        </div>
+        <div class="skill-item">
+          <img src="../img/javascript-icon.svg" alt="JavaScript" class="skill-icon">
+          <span class="skill-name">JavaScript</span>
+        </div>
+        <div class="skill-item">
+          <img src="../img/html5-icon.svg" alt="HTML5" class="skill-icon">
+          <span class="skill-name">HTML5</span>
+        </div>
+        <div class="skill-item">
+          <img src="../img/css3-icon.svg" alt="CSS3" class="skill-icon">
+          <span class="skill-name">CSS3</span>
+        </div>
+        <div class="skill-item">
+          <img src="../img/git-icon.svg" alt="Git" class="skill-icon">
+          <span class="skill-name">Git</span>
+        </div>
+        <div class="skill-item">
+          <img src="../img/linux-icon.svg" alt="Linux" class="skill-icon">
+          <span class="skill-name">Linux</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 关于我 -->
+    <section class="about">
+      <h2 class="section-title" data-translate="about_me">关于我</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p data-translate="about_text_1">我是一名专注于网络安全和全栈开发的自由职业者，拥有丰富的项目经验和深厚的技术功底。</p>
+          <p data-translate="about_text_2">在网络安全领域，我专注于漏洞挖掘、渗透测试和安全工具开发，目前在研究LLM大语言模型和深度学习。在全栈开发方面，我能够独立完成从前端到后端的完整项目开发。</p>
+          <p data-translate="about_text_3">我热爱技术，持续学习新技术，致力于为客户提供高质量的技术解决方案。</p>
+          <p data-translate="about_text_4">PS: 因为客户隐私问题, 有太多的项目因为商业秘密问题不可公开</p>
+        </div>
+        <div class="about-stats">
+          <div class="stat-item">
+            <span class="stat-number">5+</span>
+            <span class="stat-label" data-translate="years_exp">年行业经验</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">30+</span>
+            <span class="stat-label" data-translate="completed_projects">完成项目</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">100%</span>
+            <span class="stat-label" data-translate="client_satisfaction">客户满意度</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 联系方式 -->
+    <section class="contact">
+      <h2 class="section-title" data-translate="contact_me">联系我</h2>
+      <div class="contact-info">
+        <div class="contact-item">
+          <span class="contact-label" data-translate="email">邮箱：</span>
+          <a href="mailto:haozhanhou@gmail.com" class="contact-link">haozhanhou@gmail.com</a>
+        </div>
+        <div class="contact-item">
+          <span class="contact-label" data-translate="github">GitHub：</span>
+          <a href="https://github.com/hhzleon" target="_blank" class="contact-link">github.com/hhzleon</a>
+        </div>
+        <div class="contact-item">
+          <span class="contact-label" data-translate="wechat">微信：</span>
+          <span class="contact-text">dev_hou</span>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>
