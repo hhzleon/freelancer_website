@@ -142,8 +142,8 @@ const translations = {
     contact: "联系我",
     
     // Index page
-    hero_title: "zhan | 网络安全 & 全栈开发",
-    hero_subtitle: "一个喜欢研究各种技术的小同学",
+    hero_title: "GaiKe | 网络安全 & 全栈开发",
+    hero_subtitle: "点击右下角联系我的数字分身哦",
     view_resume: "查看我的简历 →",
     
     // Projects section

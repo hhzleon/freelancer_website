@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/styles/github.min.css">
+  <link
+    href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css"
+    rel="stylesheet"
+  />
   <script src="../js/translations.js"></script>
   <script src="../js/language-switcher.js"></script>
   <script defer src="../js/javascript.js"></script>
@@ -14,6 +18,16 @@
     document.addEventListener("DOMContentLoaded", () => hljs.highlightAll());
   </script>
   <title data-translate="hero_title">zhan | 网络安全 & 全栈开发</title>
+  <style>
+    .chat-powered-by {
+	text-align: center;
+
+    a {
+      color: var(--chat--color-primary);
+      text-decoration: none;
+    }
+  }
+  </style>
 </head>
 
 <body>
@@ -26,8 +40,8 @@
   <div class="content">
     <!-- 主视觉区 -->
     <header class="hero-section">
-      <h1 class="title" data-translate="hero_title">zhan | 网络安全 & 全栈开发</h1>
-      <p class="subtitle" data-translate="hero_subtitle">"一个喜欢研究各种技术的小同学"</p>
+      <h1 class="title" data-translate="hero_title">Gaike | 全栈开发</h1>
+      <p class="subtitle" data-translate="hero_subtitle">"你好"</p>
       <button class="cta-button" data-translate="view_resume">查看我的简历 →</button>
     </header>
 
@@ -213,6 +227,30 @@
       </div>
     </section>
   </div>
+  <div id="chat-container"></div>
 </body>
+<script type="module">
+  import { createChat } from "https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js";
+
+  createChat({
+    // 挂载到指定的 DOM 容器
+    container: document.getElementById("chat-container"),
+    defaultLanguage: "zh",
+    initialMessages: [
+      "你好呀!",
+      "我是Gaike, 一个全栈开发工程师, 有什么可以帮你的吗?"
+    ],
+    webhookUrl: "http://123.56.14.156:5678/webhook/1f0f8285-e5ba-4144-91c9-64dbb41e74cb/chat",
+    i18n: {
+      zh: {
+        title: "欢迎来到GaiKe的首页",
+        subtitle: "技术咨询|了解我|联系我",
+        footer: "Gaike © 2025",
+        getStarted: "开始会话",
+        inputPlaceholder: "您想问什么呢?"
+      }
+    }
+  });
+</script>
 
 </html>
