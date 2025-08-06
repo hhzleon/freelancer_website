@@ -10,14 +10,19 @@
     href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css"
     rel="stylesheet"
   />
+            <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+          
   <script src="../js/translations.js"></script>
   <script src="../js/language-switcher.js"></script>
   <script defer src="../js/javascript.js"></script>
+   
+  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+          
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/highlight.min.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", () => hljs.highlightAll());
   </script>
-  <title data-translate="hero_title">zhan | 网络安全 & 全栈开发</title>
+  <title data-translate="hero_title">Gaike | 网络安全 & 全栈开发</title>
   <style>
     .chat-powered-by {
 	text-align: center;
@@ -35,6 +40,28 @@
   <nav class="header">
     <a href="./index.html" class="active" data-translate="home">首页</a>
     <a href="./cv.html" data-translate="resume">简历</a>
+    <div class="language-switcher" style="
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    ">
+      <select id="languageSelect" style="
+        padding: 5px 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        background: white;
+        font-size: 14px;
+        cursor: pointer;
+        outline: none;
+      ">
+        <option value="zh">中文</option>
+        <option value="en">English</option>
+      </select>
+    </div>
   </nav>
 
   <div class="content">
@@ -142,41 +169,90 @@
       </div>
     </section>
 
+    <!-- 正在进行的项目 -->
+    <section class="ongoing-projects">
+      <h2 class="section-title" data-translate="ongoing_projects">正在进行的项目</h2>
+      <div class="ongoing-projects-grid">
+        <div class="ongoing-project-card">
+          <div class="project-header">
+            <h3 data-translate="app_development_title">一个APP的诞生</h3>
+            <span class="status-tag ongoing" data-translate="in_progress">进行中</span>
+          </div>
+          <p class="project-description" data-translate="app_development_desc">从零开始开发一个完整的移动应用，包含前端界面设计和后端服务架构</p>
+          <div class="project-tech">
+            <span class="tech-tag">UNIAPP</span>
+            <span class="tech-tag">VUE</span>
+            <span class="tech-tag">JavaScript</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: 10%"></div>
+            <span class="progress-text" data-translate="progress_65">10% 完成</span>
+          </div>
+        </div>
+
+        <div class="ongoing-project-card">
+          <div class="project-header">
+            <h3 data-translate="ai_c2_controller_title">AI赋能的AI_C2控制器</h3>
+            <span class="status-tag ongoing" data-translate="in_progress">进行中</span>
+          </div>
+          <p class="project-description" data-translate="ai_c2_controller_desc">基于人工智能技术的C2控制器，实现智能化的网络安全控制和管理</p>
+          <div class="project-tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">PyTorch</span>
+            <span class="tech-tag">TensorFlow</span>
+            <span class="tech-tag">Docker</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: 0%"></div>
+            <span class="progress-text" data-translate="progress_45">0% 完成</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- 技术栈图标墙 -->
     <section class="skills">
       <h2 class="section-title" data-translate="tech_stack">技术栈</h2>
       <div class="skills-grid">
         <div class="skill-item">
-          <img src="../img/python-icon.svg" alt="Python" class="skill-icon">
+          <!-- <img src="../img/python-icon.svg" alt="Python" class="skill-icon">
+            -->
+          
+          <i class="devicon-python-plain colored skill-icon"></i>
+          
           <span class="skill-name">Python</span>
         </div>
         <div class="skill-item">
-          <img src="../img/php-icon.svg" alt="PHP" class="skill-icon">
+          <i class="devicon-php-plain colored skill-icon"></i>
           <span class="skill-name">PHP</span>
         </div>
         <div class="skill-item">
-          <img src="../img/vue-icon.svg" alt="Vue" class="skill-icon">
+          <i class="devicon-vuejs-plain colored skill-icon"></i>
           <span class="skill-name">Vue.js</span>
         </div>
         <div class="skill-item">
-          <img src="../img/javascript-icon.svg" alt="JavaScript" class="skill-icon">
+          <i class="devicon-javascript-plain colored skill-icon"></i>
           <span class="skill-name">JavaScript</span>
         </div>
         <div class="skill-item">
-          <img src="../img/html5-icon.svg" alt="HTML5" class="skill-icon">
+          <i class="devicon-html5-plain colored skill-icon"></i>
           <span class="skill-name">HTML5</span>
         </div>
         <div class="skill-item">
-          <img src="../img/css3-icon.svg" alt="CSS3" class="skill-icon">
+          <i class="devicon-css3-plain colored skill-icon"></i>
           <span class="skill-name">CSS3</span>
         </div>
         <div class="skill-item">
-          <img src="../img/git-icon.svg" alt="Git" class="skill-icon">
+          <i class="devicon-git-plain colored skill-icon"></i>
           <span class="skill-name">Git</span>
         </div>
         <div class="skill-item">
-          <img src="../img/linux-icon.svg" alt="Linux" class="skill-icon">
+          <i class="devicon-linux-plain colored skill-icon"></i>
           <span class="skill-name">Linux</span>
+        </div>
+        <div class="skill-item">
+          <i class="devicon-kalilinux-original skill-icon"></i>
+          <span class="skill-name">Kali Linux</span>
         </div>
       </div>
     </section>

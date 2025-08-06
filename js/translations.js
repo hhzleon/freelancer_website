@@ -7,7 +7,7 @@ const translations = {
     contact: "Contact",
     
     // Index page
-    hero_title: "zhan | Cybersecurity & Full-Stack Development",
+    hero_title: "Gaike | Cybersecurity & Full-Stack Development",
     hero_subtitle: "A student who loves studying various technologies",
     view_resume: "View My Resume →",
     
@@ -23,6 +23,15 @@ const translations = {
     view_details: "View Details",
     in_progress: "In Progress",
     secondary_dev: "Secondary Development",
+    
+    // Ongoing projects section
+    ongoing_projects: "Ongoing Projects",
+    app_development_title: "Birth of an APP",
+    app_development_desc: "Developing a complete mobile application from scratch, including frontend interface design and backend service architecture",
+    ai_c2_controller_title: "AI-Powered AI_C2 Controller",
+    ai_c2_controller_desc: "C2 controller based on artificial intelligence technology, achieving intelligent cybersecurity control and management",
+    progress_65: "65% Complete",
+    progress_45: "45% Complete",
     
     // Project descriptions
     t5ezxss_desc: "Secondary development optimization",
@@ -66,7 +75,7 @@ const translations = {
     wechat: "WeChat:",
     
     // CV page
-    cv_title: "zhan | Personal Resume",
+    cv_title: "Gaike | Personal Resume",
     education: "Education",
     major: "Major",
     school: "School",
@@ -150,14 +159,23 @@ const translations = {
     my_projects: "我的作品",
     all: "全部",
     cybersecurity: "网络安全",
-    web_dev: "Web开发",
-    automation: "自动化工具", 
+    web_dev: "Web开发", 
+    automation: "自动化工具",
     academic: "学术项目",
     view_code: "查看代码",
     view_demo: "查看演示",
     view_details: "查看详情",
     in_progress: "进行中",
     secondary_dev: "二次开发",
+    
+    // Ongoing projects section
+    ongoing_projects: "正在进行的项目",
+    app_development_title: "一个APP的诞生",
+    app_development_desc: "从零开始开发一个完整的移动应用，包含前端界面设计和后端服务架构",
+    ai_c2_controller_title: "AI赋能的AI_C2控制器",
+    ai_c2_controller_desc: "基于人工智能技术的C2控制器，实现智能化的网络安全控制和管理",
+    progress_65: "65% 完成",
+    progress_45: "45% 完成",
     
     // Project descriptions
     t5ezxss_desc: "二次开发优化",
@@ -201,7 +219,7 @@ const translations = {
     wechat: "微信：",
     
     // CV page
-    cv_title: "zhan | 个人简历",
+    cv_title: "Gaike | 个人简历",
     education: "教育经历",
     major: "学历",
     school: "学校",

@@ -9,13 +9,20 @@ function initLanguageSwitcher() {
     return;
   }
   
-  // Create language switcher UI
-  createLanguageSwitcherUI();
-  
   // Load saved language preference
   const savedLanguage = localStorage.getItem('preferredLanguage');
   if (savedLanguage && translations[savedLanguage]) {
     currentLanguage = savedLanguage;
+  }
+  
+  // Set up event listener for language select
+  const select = document.getElementById('languageSelect');
+  if (select) {
+    select.value = currentLanguage;
+    select.addEventListener('change', function() {
+      const newLanguage = this.value;
+      switchLanguage(newLanguage);
+    });
   }
   
   // Apply current language
@@ -26,64 +33,6 @@ function initLanguageSwitcher() {
   if (currentLanguageText) {
     updateCurrentLanguageText(currentLanguageText, currentLanguage);
   }
-}
-
-// Create language switcher UI
-function createLanguageSwitcherUI() {
-  const header = document.querySelector('.header');
-  if (!header) return;
-  
-  const languageSwitcher = document.createElement('div');
-  languageSwitcher.className = 'language-switcher';
-  languageSwitcher.style.cssText = `
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  `;
-  
-  // Get the current language display text
-  const languageNames = {
-    'zh': '中文',
-    'en': 'English'
-  };
-  const currentDisplayText = languageNames[currentLanguage] || currentLanguage;
-  
-  languageSwitcher.innerHTML = `
-    <span style="
-      font-size: 14px;
-      color: #666;
-      white-space: nowrap;
-    " id="currentLanguageText">${currentDisplayText}</span>
-    <select id="languageSelect" style="
-      padding: 5px 10px;
-      border: 1px solid #ddd;
-      border-radius: 4px;
-      background: white;
-      font-size: 14px;
-      cursor: pointer;
-      outline: none;
-    ">
-      <option value="zh">中文</option>
-      <option value="en">English</option>
-    </select>
-  `;
-  
-  header.appendChild(languageSwitcher);
-  
-  // Add event listener
-  const select = languageSwitcher.querySelector('#languageSelect');
-  const currentLanguageText = languageSwitcher.querySelector('#currentLanguageText');
-  
-  select.value = currentLanguage;
-  
-  select.addEventListener('change', function() {
-    const newLanguage = this.value;
-    switchLanguage(newLanguage);
-  });
 }
 
 // Update current language text
@@ -191,6 +140,15 @@ function applyLanguage(language) {
   updateElementText('[data-translate="demo_tag"]', t.demo_tag);
   updateElementText('[data-translate="not_public"]', t.not_public);
   updateElementText('[data-translate="not_public_details"]', t.not_public_details);
+  
+  // Update ongoing projects section
+  updateElementText('[data-translate="ongoing_projects"]', t.ongoing_projects);
+  updateElementText('[data-translate="app_development_title"]', t.app_development_title);
+  updateElementText('[data-translate="app_development_desc"]', t.app_development_desc);
+  updateElementText('[data-translate="ai_c2_controller_title"]', t.ai_c2_controller_title);
+  updateElementText('[data-translate="ai_c2_controller_desc"]', t.ai_c2_controller_desc);
+  updateElementText('[data-translate="progress_65"]', t.progress_65);
+  updateElementText('[data-translate="progress_45"]', t.progress_45);
   
   // Update skills section
   updateElementText('[data-translate="tech_stack"]', t.tech_stack);
